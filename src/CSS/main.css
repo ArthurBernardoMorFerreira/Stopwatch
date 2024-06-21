@@ -1,0 +1,263 @@
+* {
+  
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+
+
+body {
+
+  height: 100vh;
+  width: 100vw;
+
+  background: linear-gradient(to right, #0d7acd, #044691, #04377b);
+
+  overflow: hidden;
+
+}
+
+h1 {
+
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  margin-top: 20px;
+
+  color: #FFF;
+
+  cursor: context-menu;
+  
+}
+
+.stopWatch_container {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 40vh;
+  
+}
+
+.stopWatch {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 20px;
+
+  padding: 0 10px;
+
+  height: 120px;
+  min-width: 190px;
+
+  background: #042755;
+
+  box-shadow: 0px 1px 2px 1px #000;
+
+}
+
+.stopWatch div {
+
+  padding: 10px 20px;
+
+  background: #0f0f0f;
+
+  border-radius: 7px;
+  box-shadow: -1px 3px 4px #000;
+
+}
+
+.stopWatch div p {
+
+  text-align: center;
+
+  cursor: context-menu;
+
+}
+
+.stopWatch div span {
+
+  font-size: 45px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  cursor: context-menu;
+
+}
+
+.stopWatch div span, 
+.stopWatch div p {
+
+  color: #FFF;
+
+}
+
+.buttons_container {
+
+  display: flex;
+  justify-content: center;
+  gap: 0 30px;
+
+  margin: 0 auto;
+
+}
+
+.buttons_container button {
+
+  font-size: 20px;
+
+  padding: 10px 15px;
+
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px #000;
+
+  cursor: pointer;
+
+}
+
+.buttons_container button:hover {
+
+  background: #111;
+  color: #FFF;
+
+}
+
+/* !Area Medias Queries  */
+
+@media (max-width: 360px) {
+
+  .stopWatch {
+
+    width: 320px;
+
+  }
+
+  .stopWatch div {
+
+    padding: 7px 18px;
+
+  }
+
+  .buttons_container {
+
+    flex-direction: column;
+    gap: 7px 0;
+
+    bottom: 18%;
+
+  }
+
+  .buttons_container button {
+
+    width: 120px;
+
+    margin: 0 auto;
+    
+  }
+
+}
+
+@media (max-width: 338px) {
+
+  .stopWatch {
+
+    width: 300px;
+
+  }
+
+  .stopWatch div {
+
+    padding: 7px 17px;
+
+  }
+
+  .stopWatch div span {
+
+    font-size: 40px;
+
+  }
+
+  .stopWatch div p {
+
+    font-size: 15px;
+
+  }
+
+}
+
+@media (max-width: 315px) {
+
+  .stopWatch {
+
+    width: 300px;
+
+  }
+
+}
+
+@media (max-width: 310px) {
+
+  .stopWatch {
+
+    width: 270px;
+
+  }
+
+  .stopWatch div {
+
+    padding: 7px 12px;
+
+  }
+
+  .stopWatch div p {
+
+    display: none;
+
+  }
+
+}
+
+@media (max-width: 285px) {
+
+  .stopWatch {
+
+    width: 220px;
+
+  }
+
+  .stopWatch div {
+
+    padding: 4px 5px;
+
+  }
+
+}
+
+@media (max-width: 280px) {
+
+  h1 {
+
+    font-size: 22px;
+
+  }
+
+}
+
+@media (max-width: 226px) {
+
+  .stopWatch {
+
+    width: 200px;
+
+  }
+
+  .stopWatch div {
+
+    padding: 2px 3px;
+
+  }
+
+}
